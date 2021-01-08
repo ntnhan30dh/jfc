@@ -1,0 +1,92 @@
+$phone: 750px;
+$tablet: 800px;
+$break-large: 1100px;
+
+$primary-colour: #cf2825;
+
+@import "header";
+@import "story";
+@import "menu";
+@import "followus";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html, body {
+    // overflow-x: hidden;
+    // background-color: aqua;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Bebas Neue', cursive
+  }
+    
+*{
+	box-sizing: border-box;
+	;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.pageWrapper {
+  position: relative;
+}
+
+// .wave {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   // background: linear-gradient(to bottom, sandybrown, chocolate);
+//   height: 50px;
+//   position: relative;
+//   margin-bottom: 20px;
+  
+//   &::before,
+//   &::after {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   background-repeat: repeat-x;
+//   }
+  
+//   &::before {
+//     height: 10px;
+//     background-size: 20px 20px;
+//     background-image: radial-gradient(circle at 10px -5px, transparent 12px, #ffd250 13px);
+//   }
+
+//   &::after {
+//     height: 15px;
+//     background-size: 40px 20px;
+//     background-image: radial-gradient(circle at 10px 15px, #ffd250 12px, transparent 13px);
+//   }
+  
+//   &--top {
+//     // background: linear-gradient(to top, sandybrown, chocolate);
+    
+//     &::before,
+//     &::after {
+//       // to take place in top instead of bottom
+//       bottom: auto;
+//       top: 0;
+//     }
+    
+//     &::before {
+//       background-image: radial-gradient(circle at 10px 15px, transparent 12px, white 13px);
+//     }
+
+//   &::after {
+//     background-image: radial-gradient(circle at 10px 0, white 12px, transparent 12px);
+//     }
+//   }
+// }
+
+// .content {
+//   color: #333;
+//   font-size: 0.8em;
+//   padding: 1em;
+// }
+
