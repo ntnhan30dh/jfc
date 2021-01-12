@@ -1,3 +1,112 @@
 .menuContainer {
- 
+  .top-text {
+    h4 {
+      font-size: 25px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.01px;
+      text-align: center;
+      color: #000000;
+      width: 30%;
+      margin: 60px auto 30px auto;
+      font-family: "Bebas Neue", cursive;
+    }
+
+    .text-div {
+      margin: 0 auto;
+      width: 60%;
+      font-size: 50px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.01px;
+      text-align: center;
+      color: #ffffff;
+      background-color: $primary-colour;
+    }
+  }
+  .main-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    .left,
+    .right {
+      font-size: 30px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.01px;
+      text-align: center;
+      color: #000000;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .left {
+      span {
+        writing-mode: vertical-lr;
+        text-orientation: sideways-right;
+        transform: rotate(180deg);
+      }
+    }
+
+    .right {
+      span {
+        writing-mode: vertical-lr;
+        text-orientation: sideways-right;
+        transform: rotate(180deg);
+      }
+    }
+    .main-menu {
+      width: 60%;
+      .menu-item {
+        background-color: $primary-colour;
+        display: flex;
+        .left {
+          width: 50%;
+          h1 {
+            font-size: 50px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.01px;
+            text-align: center;
+            color: #ffffff;
+            background: url(../images/background-text.png) repeat;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-color: white;
+            text-decoration: underline white;
+          }
+          h4 {
+            font-size: 25px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            letter-spacing: 0.01px;
+            text-align: center;
+            color: #ffffff;
+          }
+        }
+        .right {
+          width: 50%;
+          text-align: center;
+          .carousel {
+            margin: 20px auto 40px auto;
+            width: 70%;
+            .slick-active {
+              .dot {
+                background-color: white !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
