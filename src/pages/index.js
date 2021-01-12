@@ -17,11 +17,11 @@ export default function Home() {
   return (
     <div className="pageWrapper">
       <head>
-      <title>Wing it!</title>
+      <title>JFC</title>
       </head>
     <Header toggleMenu={toggleMenu} menuState={menuActive}/>
-    {/* <Story toggleMenu={toggleMenu} menuState={menuActive}/>
-    <Menu/>
+    <Story toggleMenu={toggleMenu} menuState={menuActive}/>
+    {/* <Menu/>
     <FollowUs/> */}
     
     </div>

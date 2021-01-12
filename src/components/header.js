@@ -2,15 +2,20 @@ import React from "react"
 import logo from "../images/logo.png"
 import OrderNow from "./ordernow"
 import { Link } from "gatsby"
+import Sticky from "react-sticky-el"
 
 const Header = props => {
   let menuActive = props.menuState ? "is-inactive" : ""
   let change = props.menuState ? "change" : ""
   return (
+    <Sticky  className="sticky">
     <nav className="nav">
       <div className="leftDiv">
-        <Link to="#" className="img_div">
+        <Link to="#" >
+        <div className="img_div">
+
           <img src={logo} alt="logo" />
+        </div>
         </Link>
         <div className={`burgerMenu  ${change}`} onClick={props.toggleMenu} onKeyDown={props.toggleMenu} role = "button" tabIndex={-1}>
           <div class="bar1"></div>
@@ -33,6 +38,7 @@ const Header = props => {
         <OrderNow />
       </div>
     </nav>
+    </Sticky> 
   )
 }
 
