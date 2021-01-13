@@ -65,6 +65,8 @@
       .menu-item {
         background-color: $primary-colour;
         display: flex;
+        position: relative;
+        margin: 20px 0;
         .left {
           width: 50%;
           h1 {
@@ -81,6 +83,7 @@
             -webkit-text-fill-color: transparent;
             background-color: white;
             text-decoration: underline white;
+            margin: 10% 0;
           }
           h4 {
             font-size: 25px;
@@ -91,6 +94,7 @@
             letter-spacing: 0.01px;
             text-align: center;
             color: #ffffff;
+            text-transform: uppercase;
           }
         }
         .right {
@@ -104,7 +108,48 @@
                 background-color: white !important;
               }
             }
+            .slick-prev:before,
+            .slick-next:before {
+              //font-family: "slick";
+              font-size: 20px;
+              font-weight: 900;
+              line-height: 1;
+              color: white;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+            }
+
+            .slick-prev:before {
+              content: "<";
+            }
+            [dir="rtl"] .slick-prev:before {
+              content: ">";
+            }
+
+            [dir="rtl"] .slick-next {
+              left: -10px;
+              top: 70px;
+              right: auto;
+            }
+            .slick-next:before {
+              content: ">";
+            }
+            [dir="rtl"] .slick-next:before {
+              content: "<";
+            }
           }
+        }
+
+        span {
+          position: absolute;
+          font-size: 100px;
+          color: white;
+          -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+          -webkit-text-stroke-width: 1px;
+          opacity: 0.6;
+          top: 70%;
+          right: 35%
+
         }
       }
     }

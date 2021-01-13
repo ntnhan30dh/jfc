@@ -88,9 +88,62 @@ const Menu = () => {
                 </Slider>
               </div>
             </div>
+            <span> juicy</span>
           </div>
-          <div className="middle"></div>
-          <div className="bottom"></div>
+          <div className="middle menu-item">
+            <div className="left">
+              <h1>BURGERS</h1>
+              <h4>
+                Jackson’s Crunchy Burger <br />
+                Jackson’s Cheezy Burger <br />
+                Hot’n'Cheezy Burger <br />
+                Double Crunchy Burger <br />
+              </h4>
+            </div>
+            <div className="right">
+              <div className="carousel">
+                <Slider {...settings}>
+                  <div>
+                    <Img fluid={data.friedChicken1.childImageSharp.fluid} />
+                  </div>
+                  <div>
+                    <Img fluid={data.tender1.childImageSharp.fluid} />
+                  </div>
+                  <div>
+                    <Img fluid={data.sides1.childImageSharp.fluid} />
+                  </div>
+                </Slider>
+              </div>
+            </div>
+            <span> tender</span>
+          </div>
+          <div className="bottom menu-item">
+            <div className="left">
+              <h1>SIDES</h1>
+              <h4>
+                Criss Cross Fries <br />
+                Steakhouse Fries <br />
+                Onion Rings <br />
+                Mixed Green Salad
+              </h4>
+            </div>
+            <div className="right">
+              <div className="carousel">
+                <Slider {...settings}>
+                  <div>
+                    <Img fluid={data.friedChicken1.childImageSharp.fluid} />
+                  </div>
+                  <div>
+                    <Img fluid={data.tender1.childImageSharp.fluid} />
+                  </div>
+                  <div>
+                    <Img fluid={data.sides1.childImageSharp.fluid} />
+                  </div>
+                </Slider>
+              </div>
+            </div>
+            <span> crunchy</span>
+          </div>
         </div>
         <div className="right">
           <span>MENU MENU MENU MENU MENU MENU MENU</span>
