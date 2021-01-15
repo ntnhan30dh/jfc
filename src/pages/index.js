@@ -24,7 +24,7 @@ export default function Home() {
     <Header toggleMenu={toggleMenu} menuState={menuActive}/>
     <Story toggleMenu={toggleMenu} menuState={menuActive}/>
     <Menu/>
-    {/* <FollowUs/> */}
+    <FollowUs/>
     
     </div>
   )

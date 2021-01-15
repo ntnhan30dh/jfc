@@ -152,6 +152,10 @@
 
         }
       }
+
+      .middle{
+        flex-direction: row-reverse;
+      }
     }
   }
 }

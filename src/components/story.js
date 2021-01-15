@@ -1,10 +1,10 @@
 import React from "react"
-import Img from "gatsby-image"
+
 
 import { graphql, useStaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
-// import chikenBox from "../images/chicken_box.png"
+import chikenTender from "../images/chicken-tender_gif.gif"
 
 import Plx from "react-plx"
 
@@ -22,24 +22,24 @@ const parallaxData = [
   },
 ]
 
-const parallaxMoveUp = [
-  {
-    start: "self",
-    duration: 500,
-    properties: [
-      {
-        startValue: 50,
-        endValue: 0,
-        property: "translateY",
-      },
-      {
-        startValue: 0.5,
-        endValue: 1,
-        property: "scale",
-      },
-    ],
-  },
-]
+// const parallaxMoveUp = [
+//   {
+//     start: "self",
+//     duration: 500,
+//     properties: [
+//       {
+//         startValue: 50,
+//         endValue: 0,
+//         property: "translateY",
+//       },
+//       {
+//         startValue: 0.5,
+//         endValue: 1,
+//         property: "scale",
+//       },
+//     ],
+//   },
+// ]
 
 const Story = props => {
   const data = useStaticQuery(graphql`
@@ -102,7 +102,8 @@ const Story = props => {
           <div className="main-div">
             <h3>Not born in Louisiana. <br/> Neither Kentucky. Nor Texas. </h3>
           <div className="img-div">
-            <Img fluid={data.chickenTender.childImageSharp.fluid} />
+            {/* <Img fluid={data.chickenTender.childImageSharp.fluid} /> */}
+            <img src={chikenTender} alt="tender"/>
           </div>
             <h3> NO MAJOR OF COLONELS. <br/> WITH HONEST ingredients </h3>
           </div>
