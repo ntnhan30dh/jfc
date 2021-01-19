@@ -1,6 +1,6 @@
 import React from "react"
 
-import logo from "../images/logo.png"
+import logo from "../images/logo_big.png"
 import ig from "../images/ig.png"
 import facebook from "../images/facebook.png"
 
@@ -16,8 +16,8 @@ const FollowUs = () => {
           </div>
           <div className="right">
             <h2>
-            Feeling tender? Or longing for burgers? Whatever your chicken
-            choice, make it Jackson's
+            Feeling tender? Or longing for <br/> burgers? Whatever your chicken <br/>
+            choice, make it Jackson's.
             </h2>
           </div>
         </div>

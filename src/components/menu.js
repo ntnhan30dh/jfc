@@ -58,20 +58,23 @@ const Menu = () => {
           Crunchy, juicy and tender - Jackson's fried chicken and burgers tick
           all the boxes.
         </h4>
-        <div className="text-div">Browse and order your favourites today</div>
+        <div className="text-div">
+          <span>Browse and order your favourites today</span>
+        </div>
       </div>
       <div className="main-div">
         <div className="left">
-          <span>MENU MENU MENU MENU MENU MENU MENU</span>
+          <span className="menu-sidebar">
+            MENU MENU MENU MENU MENU MENU MENU
+          </span>
         </div>
         <div className="main-menu">
           <div className="top menu-item">
             <div className="left">
               <h1>FRIED CHICKEN</h1>
-              <h4>
-                Jackson’s Wings <br />
-                Jackson’s Tenders
-              </h4>
+              <h4>Jackson’s Wings</h4>
+              <h4>Jackson’s Tenders</h4>
+              <h4></h4>
             </div>
             <div className="right">
               <div className="carousel">
@@ -93,12 +96,14 @@ const Menu = () => {
           <div className="middle menu-item">
             <div className="left">
               <h1>BURGERS</h1>
-              <h4>
-                Jackson’s Crunchy Burger <br />
-                Jackson’s Cheezy Burger <br />
-                Hot’n'Cheezy Burger <br />
-                Double Crunchy Burger <br />
-              </h4>
+
+              <h4>Jackson’s Crunchy Burger</h4>
+
+              <h4>Jackson’s Cheezy Burger</h4>
+
+              <h4>Hot’n'Cheezy Burger</h4>
+
+              <h4>Double Crunchy Burger</h4>
             </div>
             <div className="right">
               <div className="carousel">
@@ -120,12 +125,11 @@ const Menu = () => {
           <div className="bottom menu-item">
             <div className="left">
               <h1>SIDES</h1>
-              <h4>
-                Criss Cross Fries <br />
-                Steakhouse Fries <br />
-                Onion Rings <br />
-                Mixed Green Salad
-              </h4>
+
+              <h4>Criss Cross Fries</h4>
+              <h4>Steakhouse Fries</h4>
+              <h4>Onion Rings</h4>
+              <h4>Mixed Green Salad</h4>
             </div>
             <div className="right">
               <div className="carousel">
@@ -146,7 +150,9 @@ const Menu = () => {
           </div>
         </div>
         <div className="right">
-          <span>MENU MENU MENU MENU MENU MENU MENU</span>
+          <span className="menu-sidebar">
+            MENU MENU MENU MENU MENU MENU MENU
+          </span>
         </div>
       </div>
     </section>

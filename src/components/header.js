@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../images/logo.png"
+import logo from "../images/logo_big.png"
 import OrderNow from "./ordernow"
 import { Link } from "gatsby"
 import Sticky from "react-sticky-el"

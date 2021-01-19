@@ -51,7 +51,7 @@ const Story = props => {
         className="bgContainer"
       >
         <div className="text">
-          <h1>Honestly good fried chicken</h1>
+          <h1>Honestly good fried chicken.</h1>
           <h4>That brings out the honesty in you.</h4>
         </div>
       </BackgroundImage>
