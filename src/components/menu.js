@@ -52,7 +52,7 @@ const Menu = () => {
     ),
   }
   return (
-    <section className="menuContainer">
+    <section className="menuContainer" id="menu">
       <div className="top-text">
         <h4>
           Crunchy, juicy and tender - Jackson's fried chicken and burgers tick

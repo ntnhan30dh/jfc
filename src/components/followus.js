@@ -6,7 +6,7 @@ import facebook from "../images/facebook.png"
 
 const FollowUs = () => {
   return (
-    <section className="followUsContainer">
+    <section className="followUsContainer" id="follow">
       <div className="redDiv">
         <div className="top">
           <div className="left">

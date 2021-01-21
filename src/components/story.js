@@ -9,16 +9,14 @@ import chikenTender from "../images/chicken-tender_gif.gif"
 import ScrollAnimation from "react-animate-on-scroll"
 
 const delayTime = {
-  one:300,
-  two:600,
-  three:900,
-  four:1200,
-  five:1500,
-  six:1800,
-  seven:2100,
-  eight:2400,
-
-
+  one: 300,
+  two: 600,
+  three: 900,
+  four: 1200,
+  five: 1500,
+  six: 1800,
+  seven: 2100,
+  eight: 2400,
 }
 
 const Story = props => {
@@ -50,12 +48,13 @@ const Story = props => {
         //  backgroundColor={`#040e18`}
         className="bgContainer"
       >
-        <div className="text">
+        <div className="text" >
           <h1>Honestly good fried chicken.</h1>
           <h4>That brings out the honesty in you.</h4>
         </div>
       </BackgroundImage>
-      <div className="storyDiv">
+      
+      <div className="storyDiv"id="story" >
         <div className="left">
           <div className="story-text">
             <span>our story</span>
@@ -68,30 +67,30 @@ const Story = props => {
             >
               <h1>chicken</h1>
             </ScrollAnimation>
-            <ScrollAnimation
-              animateIn="bounceInRight"
-              delay={delayTime.four}
-              duration={0.5}
-            >
-              <h4>NO SECRET HERBS OR SPICES</h4>
-            </ScrollAnimation>
+            <div className="main-div">
+              <ScrollAnimation
+                animateIn="bounceInRight"
+                delay={delayTime.four}
+                duration={0.5}
+              >
+                <h4>NO SECRET HERBS OR SPICES</h4>
+              </ScrollAnimation>
 
-            <div
-              className="main-text"
-            >
-              <span>
-                JUST <br />
-                Jackson’s
-              </span>
+              <div className="main-text">
+                <span>
+                  JUST <br />
+                  Jackson’s
+                </span>
+              </div>
+
+              <ScrollAnimation
+                animateIn="bounceInRight"
+                delay={delayTime.six}
+                duration={0.5}
+              >
+                <h4>No confidential buttermilk recipes.</h4>
+              </ScrollAnimation>
             </div>
-
-            <ScrollAnimation
-              animateIn="bounceInRight"
-              delay={delayTime.six}
-              duration={0.5}
-            >
-              <h4>No confidential buttermilk recipes.</h4>
-            </ScrollAnimation>
 
             <ScrollAnimation
               animateIn="bounceInRight"
@@ -104,14 +103,14 @@ const Story = props => {
         </div>
         <div className="right">
           <div className="main-div">
-          <ScrollAnimation
+            <ScrollAnimation
               animateIn="bounceInRight"
               delay={delayTime.seven}
               duration={0.5}
             >
-            <h3>
-              Not born in Louisiana. <br /> Neither Kentucky. Nor Texas.{" "}
-            </h3>
+              <h3>
+                Not born in Louisiana. <br /> Neither Kentucky. Nor Texas.{" "}
+              </h3>
             </ScrollAnimation>
             <div className="img-div">
               {/* <Img fluid={data.chickenTender.childImageSharp.fluid} /> */}
@@ -129,14 +128,13 @@ const Story = props => {
             </ScrollAnimation>
           </div>
           <ScrollAnimation
-              animateIn="bounceInRight"
-              delay={delayTime.three}
-              duration={0.5}
-              className="hot-spicy"
-            >
+            animateIn="bounceInRight"
+            delay={delayTime.three}
+            duration={0.5}
+            className="hot-spicy"
+          >
             <span>hot & spicy</span>
-            </ScrollAnimation>
-          
+          </ScrollAnimation>
         </div>
       </div>
     </section>
