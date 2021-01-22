@@ -19,7 +19,7 @@
       text-transform: uppercase;
 
       h1 {
-        width: 412px;
+        //width: 412px;
         // margin-right: 40%;
         font-size: 100px;
         font-weight: bold;
@@ -28,6 +28,12 @@
         line-height: 0.84;
         letter-spacing: 3.02px;
         color: #ffffff;
+        @media screen and (max-width: $phone) {
+          font-size: 70px;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 60px;
+        }
       }
       h4 {
         font-size: 22px;
@@ -37,6 +43,9 @@
         line-height: normal;
         letter-spacing: 0.01px;
         color: #ffffff;
+        @media screen and (max-width: $phone) {
+          font-size: 18px;
+        }
       }
     }
   }
@@ -44,13 +53,26 @@
   .storyDiv {
     display: flex;
     margin-top: 60px;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      align-items: center;
+    }
     .left {
       width: 50%;
       display: flex;
+      @media screen and (max-width: 1000px) {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media screen and (max-width: $phone) {
+        width: 90%;
+      }
       .story-text {
         font-family: "Bebas Neue", cursive;
         font-family: "Roboto", sans-serif;
-        width:  70px;
+        width: 70px;
         font-size: 30px;
         font-weight: normal;
         font-stretch: normal;
@@ -66,10 +88,20 @@
         text-transform: uppercase;
         border-top: solid $primary-colour 4px;
         border-bottom: solid $primary-colour 4px;
+        @media screen and (max-width: 1000px) {
+          width: 90%;
+          height: auto;
+          border-left: solid $primary-colour 4px;
+          border-right: solid $primary-colour 4px;
+        }
         span {
           position: absolute;
           transform: rotate(270deg);
           width: fit-content;
+          @media screen and (max-width: 1000px) {
+            transform: none;
+            position: relative;
+          }
         }
       }
       .red {
@@ -93,32 +125,28 @@
           animation-delay: 0.5s;
           animation-fill-mode: forwards;
           opacity: 0;
-        //  height: 80px;
+          @media screen and (max-width: 1200px) {
+            font-size: 60px;
+          }
+
+          @media screen and (max-width: 500px) {
+            font-size: 50px;
+          }
+          
         }
-        // .fadeIn{
-        //   animation-name: fadeIn;
-        //  // animation-delay: 10s;
-        //   animation-fill-mode: both;
-        //  // opacity: 0;
-        //   //transition-delay: 1s;
-        // }
-        .main-div{
-         // height: 400px;
+
+        .main-div {
+          // height: 400px;
           .main-text {
             width: 60%;
             // height: 147px;
-            padding: 10% ;
+            padding: 10%;
             margin: 5% auto;
             border-left: solid white 1px;
             border-right: solid white 1px;
-            // animation: fadeIn 1s;
-            //animation-delay: 10s;
-            // animation-fill-mode: forwards;
-            // opacity: 0;
-           // transition-delay: 2s;
-  
+
             span {
-              font-size: 80px;
+              font-size: 100px;
               font-weight: bold;
               font-stretch: normal;
               font-style: normal;
@@ -130,9 +158,19 @@
               background-clip: text;
               -webkit-text-fill-color: transparent;
               background-color: white;
+              @media screen and (max-width: 1500px) {
+                font-size: 70px;
+              }
+              @media screen and (max-width: 1200px) {
+                font-size: 60px;
+              }
+
+              @media screen and (max-width: 500px) {
+                font-size: 40px;
+              }
             }
           }
-  
+
           h4 {
             font-family: "Bebas Neue", cursive;
             font-family: "Roboto", sans-serif;
@@ -145,9 +183,11 @@
             text-align: center;
             color: #ffffff;
             text-transform: uppercase;
-           // transition-delay: 2s;
+            // transition-delay: 2s;
+            @media screen and (max-width: 500px) {
+              font-size: 16px;
+            }
           }
-
         }
       }
     }
@@ -155,14 +195,25 @@
       width: 50%;
       display: flex;
       padding-left: 5%;
+      @media screen and (max-width: 1000px) {
+        width: 80%;
+        flex-direction: column;
+        padding-left: 0;
+        margin: 30px 0;
+      }
+
+      @media screen and (max-width: $phone) {
+        width: 90%;
+      }
       .main-div {
         width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         text-align: center;
-       // margin: auto;
-      // border: 1px solid pink;
+        @media screen and (max-width: 1000px) {
+          width: 100%;
+        }
         h3 {
           font-family: "Roboto";
           font-size: 25px;
@@ -175,6 +226,9 @@
           color: $primary-colour;
           text-transform: uppercase;
           margin: 15px 0;
+          @media screen and (max-width: 500px) {
+            font-size: 20px;
+          }
         }
         .img-div {
           width: 80%;
@@ -182,8 +236,8 @@
           margin: 0 auto;
           border: 3px solid $primary-colour;
           img {
-           max-width: 100%;
-           // height: 100%;
+            max-width: 100%;
+            // height: 100%;
           }
         }
       }
@@ -194,6 +248,11 @@
         justify-content: center;
         align-items: center;
         text-transform: uppercase;
+        @media screen and (max-width: 1000px) {
+          width: 100%;
+          height: auto;
+          margin: 20px 0;
+        }
         span {
           position: absolute;
           transform: rotate(270deg);
@@ -203,6 +262,17 @@
           color: $primary-colour;
           -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
           -webkit-text-stroke-width: 1px;
+          @media screen and (max-width: 1200px) {
+            font-size: 60px;
+          }
+          @media screen and (max-width: 1000px) {
+            transform: none;
+            position: relative;
+          }
+
+          @media screen and (max-width: 500px) {
+            font-size: 50px;
+          }
         }
       }
     }
@@ -214,6 +284,10 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

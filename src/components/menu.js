@@ -14,6 +14,7 @@ const Menu = () => {
           }
         }
       }
+
       tender1: file(relativePath: { eq: "tender-1.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
@@ -21,6 +22,15 @@ const Menu = () => {
           }
         }
       }
+
+      burger1: file(relativePath: { eq: "burger1.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
       sides1: file(relativePath: { eq: "sides-1.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
@@ -55,7 +65,7 @@ const Menu = () => {
     <section className="menuContainer" id="menu">
       <div className="top-text">
         <h4>
-          Crunchy, juicy and tender - Jackson's fried chicken and burgers tick
+          Crunchy, juicy and tender - Jackson's fried chicken and <br/> burgers tick
           all the boxes.
         </h4>
         <div className="text-div">
@@ -90,8 +100,8 @@ const Menu = () => {
                   </div>
                 </Slider>
               </div>
-            </div>
             <span> juicy</span>
+            </div>
           </div>
           <div className="middle menu-item">
             <div className="left">
@@ -119,8 +129,8 @@ const Menu = () => {
                   </div>
                 </Slider>
               </div>
-            </div>
             <span> tender</span>
+            </div>
           </div>
           <div className="bottom menu-item">
             <div className="left">
@@ -145,8 +155,8 @@ const Menu = () => {
                   </div>
                 </Slider>
               </div>
+            <span className="crunchy-text"> crunchy</span>
             </div>
-            <span> crunchy</span>
           </div>
         </div>
         <div className="right">

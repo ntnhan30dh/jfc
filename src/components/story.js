@@ -49,7 +49,7 @@ const Story = props => {
         className="bgContainer"
       >
         <div className="text" >
-          <h1>Honestly good fried chicken.</h1>
+          <h1>Honestly <br/> good fried <br/> chicken.</h1>
           <h4>That brings out the honesty in you.</h4>
         </div>
       </BackgroundImage>
@@ -59,7 +59,7 @@ const Story = props => {
           <div className="story-text">
             <span>our story</span>
           </div>
-          <div className="red">
+          <div className="red" id='scrolly-div'>
             <ScrollAnimation
               animateIn="bounceInRight"
               delay={delayTime.one}
@@ -78,7 +78,7 @@ const Story = props => {
 
               <div className="main-text">
                 <span>
-                  JUST <br />
+                  JUST
                   Jackson’s
                 </span>
               </div>
@@ -121,10 +121,12 @@ const Story = props => {
               delay={delayTime.five}
               duration={0.5}
             >
+            {/* <div> */}
             <h3>
               {" "}
               NO MAJOR OF COLONELS. <br /> WITH HONEST ingredients{" "}
             </h3>
+            {/* </div> */}
             </ScrollAnimation>
           </div>
           <ScrollAnimation
