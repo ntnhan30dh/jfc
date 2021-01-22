@@ -9,14 +9,14 @@ import chikenTender from "../images/chicken-tender_gif.gif"
 import ScrollAnimation from "react-animate-on-scroll"
 
 const delayTime = {
-  one: 300,
-  two: 600,
-  three: 900,
-  four: 1200,
-  five: 1500,
-  six: 1800,
-  seven: 2100,
-  eight: 2400,
+  one: 250,
+  two: 500,
+  three: 750,
+  four: 1000,
+  five: 1250,
+  six: 1500,
+  seven: 1750,
+  eight: 2000,
 }
 
 const Story = props => {
@@ -70,7 +70,7 @@ const Story = props => {
             <div className="main-div">
               <ScrollAnimation
                 animateIn="bounceInRight"
-                delay={delayTime.four}
+                delay={delayTime.three}
                 duration={0.5}
               >
                 <h4>NO SECRET HERBS OR SPICES</h4>
@@ -85,7 +85,7 @@ const Story = props => {
 
               <ScrollAnimation
                 animateIn="bounceInRight"
-                delay={delayTime.six}
+                delay={delayTime.four}
                 duration={0.5}
               >
                 <h4>No confidential buttermilk recipes.</h4>
@@ -105,7 +105,7 @@ const Story = props => {
           <div className="main-div">
             <ScrollAnimation
               animateIn="bounceInRight"
-              delay={delayTime.seven}
+              delay={delayTime.five}
               duration={0.5}
             >
               <h3>
@@ -118,7 +118,7 @@ const Story = props => {
             </div>
             <ScrollAnimation
               animateIn="bounceInRight"
-              delay={delayTime.five}
+              delay={delayTime.six}
               duration={0.5}
             >
             {/* <div> */}
@@ -131,7 +131,7 @@ const Story = props => {
           </div>
           <ScrollAnimation
             animateIn="bounceInRight"
-            delay={delayTime.three}
+            delay={delayTime.seven}
             duration={0.5}
             className="hot-spicy"
           >
