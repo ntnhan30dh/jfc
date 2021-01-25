@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Header from "../components/header"
-import Story from "../components/story"
+import Story from "../components/story_schrollAnimation"
 import Menu from "../components/menu"
 import FollowUs from "../components/followus"
 import CookieConsent from "react-cookie-consent"

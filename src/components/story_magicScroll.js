@@ -52,7 +52,7 @@ const Story = props => {
       >
         <div className="text">
           <h1>
-            Honestly <br /> good fried <br /> chicken.
+            Honestly <br /> good fried <br /> chicken
           </h1>
           <h4>That brings out the honesty in you.</h4>
         </div>
@@ -71,7 +71,7 @@ const Story = props => {
                     <Timeline
                       target={
                         <div>
-                          <h1>chicken</h1>
+                          <h1>chicken.</h1>
                         </div>
                       }
                     >

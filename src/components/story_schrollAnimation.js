@@ -51,7 +51,7 @@ const Story = props => {
         className="bgContainer"
       >
         <div className="text" >
-          <h1>Honestly <br/> good fried <br/> chicken.</h1>
+          <h1>Honestly <br/> good fried <br/> chicken</h1>
           <h4>That brings out the honesty in you.</h4>
         </div>
       </BackgroundImage>
@@ -69,7 +69,7 @@ const Story = props => {
               delay={delayTime.one}
               duration={0.5}
             >
-              <h1>chicken</h1>
+              <h1>chicken.</h1>
             </ScrollAnimation>
             <div className="main-div">
               <ScrollAnimation

@@ -9,7 +9,7 @@
       letter-spacing: 1px;
       text-align: center;
       color: #000000;
-       padding:  0 35%;
+       padding:  0 34%;
       margin: 60px auto 30px auto;
       font-family: "Bebas Neue", cursive;
 
@@ -211,7 +211,7 @@
           -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
           -webkit-text-stroke-width: 1px;
           opacity: 0.6;
-          top: 55%;
+          top: 67%;
           right: 70%;
           text-transform: uppercase;
           @media screen and (max-width: 1400px) {
@@ -236,7 +236,7 @@
         }
         .crunchy-text{
           // top: 50%;
-           right: 40%;
+           right: 35%;
 
            @media screen and (max-width: 1000px) {
             top: -10px;
@@ -253,7 +253,7 @@
           flex-direction: column;
         }
         span{
-          top:20%;
+          top:5%;
           left: 50%;
           @media screen and (max-width: 1000px) {
             top: -10px;
