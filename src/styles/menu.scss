@@ -218,7 +218,7 @@
           -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
           -webkit-text-stroke-width: 1px;
           opacity: 0.6;
-          top: 67%;
+          bottom: 50px;
           right: 70%;
           text-transform: uppercase;
           @media screen and (max-width: 1400px) {
@@ -260,7 +260,7 @@
           flex-direction: column;
         }
         span{
-          top:5%;
+          top:20px;
           left: 55%;
           @media screen and (max-width: 1000px) {
             top: -10px;
