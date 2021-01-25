@@ -8,6 +8,7 @@ import chikenTender from "../images/chicken-tender_gif.gif"
 // import Plx from "react-plx"
 import ScrollAnimation from "react-animate-on-scroll"
 
+
 const delayTime = {
   one: 250,
   two: 500,

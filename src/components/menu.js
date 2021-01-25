@@ -1,13 +1,20 @@
 import React from "react"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
-
 import Slider from "react-slick"
 
 const Menu = () => {
   const data = useStaticQuery(graphql`
     {
       friedChicken1: file(relativePath: { eq: "fried-chicken-1.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      friedChicken2: file(relativePath: { eq: "friedChicken2.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -23,7 +30,7 @@ const Menu = () => {
         }
       }
 
-      burger1: file(relativePath: { eq: "burger1.jpg" }) {
+      burger1: file(relativePath: { eq: "burger1.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -31,7 +38,23 @@ const Menu = () => {
         }
       }
 
-      sides1: file(relativePath: { eq: "sides-1.png" }) {
+      burger2: file(relativePath: { eq: "burger2.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      burger3: file(relativePath: { eq: "burger3.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      sides1: file(relativePath: { eq: "sides1.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -73,7 +96,7 @@ const Menu = () => {
         </div>
       </div>
       <div className="main-div">
-        <div className="left">
+        <div       className="left">
           <span className="menu-sidebar">
             MENU MENU MENU MENU MENU MENU MENU
           </span>
@@ -93,7 +116,7 @@ const Menu = () => {
                     <Img fluid={data.friedChicken1.childImageSharp.fluid} />
                   </div>
                   <div>
-                    <Img fluid={data.tender1.childImageSharp.fluid} />
+                    <Img fluid={data.friedChicken2.childImageSharp.fluid} />
                   </div>
                   <div>
                     <Img fluid={data.sides1.childImageSharp.fluid} />
@@ -119,13 +142,13 @@ const Menu = () => {
               <div className="carousel">
                 <Slider {...settings}>
                   <div>
-                    <Img fluid={data.friedChicken1.childImageSharp.fluid} />
+                    <Img fluid={data.burger1.childImageSharp.fluid} />
                   </div>
                   <div>
-                    <Img fluid={data.tender1.childImageSharp.fluid} />
+                    <Img fluid={data.burger2.childImageSharp.fluid} />
                   </div>
                   <div>
-                    <Img fluid={data.sides1.childImageSharp.fluid} />
+                    <Img fluid={data.burger3.childImageSharp.fluid} />
                   </div>
                 </Slider>
               </div>
