@@ -6,8 +6,9 @@ import BackgroundImage from "gatsby-background-image"
 import chikenTender from "../images/chicken-tender_gif.gif"
 
 // import Plx from "react-plx"
-import ScrollAnimation from "react-animate-on-scroll"
-
+//import ScrollAnimation from "react-animate-on-scroll"
+import { Controller, Scene } from "react-scrollmagic"
+import { Tween, Timeline } from "react-gsap"
 
 const delayTime = {
   one: 250,
@@ -49,97 +50,154 @@ const Story = props => {
         //  backgroundColor={`#040e18`}
         className="bgContainer"
       >
-        <div className="text" >
-          <h1>Honestly <br/> good fried <br/> chicken.</h1>
+        <div className="text">
+          <h1>
+            Honestly <br /> good fried <br /> chicken.
+          </h1>
           <h4>That brings out the honesty in you.</h4>
         </div>
       </BackgroundImage>
-      
-      <div className="storyDiv"id="story" >
-        <div className="left">
-          <div className="story-text">
-            <span>our story</span>
-          </div>
-          <div className="red" id='scrolly-div'>
-            <ScrollAnimation
-              animateIn="bounceInRight"
-              delay={delayTime.one}
-              duration={0.5}
-            >
-              <h1>chicken</h1>
-            </ScrollAnimation>
-            <div className="main-div">
-              <ScrollAnimation
-                animateIn="bounceInRight"
-                delay={delayTime.three}
-                duration={0.5}
-              >
-                <h4>NO SECRET HERBS OR SPICES</h4>
-              </ScrollAnimation>
 
-              <div className="main-text">
-                <span>
-                  JUST
-                  Jackson’s
-                </span>
-              </div>
+      <Controller>
+        <Scene triggerHook="onLeave" duration={1200} pin offset={"-150px"}>
+          {progress => (
+            <div className="storyDiv" id="story">
+              <Timeline totalProgress={progress} paused>
+                <div className="left">
+                  <div className="story-text">
+                    <span>our story</span>
+                  </div>
+                  <div className="red" id="scrolly-div">
+                    <Timeline
+                      target={
+                        <div>
+                          <h1>chicken</h1>
+                        </div>
+                      }
+                    >
+                      <Tween
+                        from={{ opacity: 0 }}
+                        to={{ opacity: 1 }}
+                        duration={1}
+                        delay={delayTime.one}
+                      />
+                    </Timeline>
 
-              <ScrollAnimation
-                animateIn="bounceInRight"
-                delay={delayTime.four}
-                duration={0.5}
-              >
-                <h4>No confidential buttermilk recipes.</h4>
-              </ScrollAnimation>
+                    <div className="main-div">
+                      <Timeline
+                        target={
+                          <div>
+                            <h4>NO SECRET HERBS OR SPICES</h4>
+                          </div>
+                        }
+                      >
+                        <Tween
+                          from={{ opacity: 0 }}
+                          to={{ opacity: 1 }}
+                          duration={100}
+                          // delay={delayTime.three}
+                        />
+                      </Timeline>
+
+                      <div className="main-text">
+                        <span>JUST Jackson’s</span>
+                      </div>
+                      <Timeline
+                        target={
+                          <div>
+                            <h4>No confidential buttermilk recipes.</h4>
+                          </div>
+                        }
+                      >
+                        <Tween
+                          from={{ opacity: 0 }}
+                          to={{ opacity: 1 }}
+                          duration={50}
+                          // delay={delayTime.three}
+                        />
+                      </Timeline>
+                    </div>
+
+                    <Timeline
+                      target={
+                        <div>
+                          <h1>fried.</h1>
+                        </div>
+                      }
+                    >
+                      <Tween
+                        from={{ opacity: 0 }}
+                        to={{ opacity: 1 }}
+                        duration={10}
+                        //delay={delayTime.two}
+                      />
+                    </Timeline>
+                  </div>
+                </div>
+                <div className="right">
+                  <div className="main-div">
+                    <Timeline
+                      target={
+                        <div>
+                          <h3>
+                            Not born in Louisiana. <br /> Neither Kentucky. Nor
+                            Texas.{" "}
+                          </h3>
+                        </div>
+                      }
+                    >
+                      <Tween
+                        from={{ opacity: 0 }}
+                        to={{ opacity: 1 }}
+                        duration={100}
+                        // delay={delayTime.three}
+                      />
+                    </Timeline>
+
+                    <div className="img-div">
+                      <img src={chikenTender} alt="tender" />
+                    </div>
+
+                    <Timeline
+                      target={
+                        <div>
+                          <h3>
+                            {" "}
+                            NO MAJOR OF COLONELS. <br /> WITH HONEST ingredients{" "}
+                          </h3>
+                        </div>
+                      }
+                    >
+                      <Tween
+                        from={{ opacity: 0 }}
+                        to={{ opacity: 1 }}
+                        duration={100}
+                        // delay={delayTime.three}
+                      />
+                    </Timeline>
+
+                    {/* </div> */}
+                  </div>
+                  <Timeline
+                    target={
+                      <div className="hot-spicy">
+                        <span>hot & spicy</span>
+                      </div>
+                    }
+                  >
+                    <Tween
+                      from={{ opacity: 0 }}
+                      to={{ opacity: 1 }}
+                      duration={100}
+                      // delay={delayTime.three}
+                    />
+                  </Timeline>
+                </div>
+              </Timeline>
             </div>
-
-            <ScrollAnimation
-              animateIn="bounceInRight"
-              delay={delayTime.two}
-              duration={0.5}
-            >
-              <h1>fried.</h1>
-            </ScrollAnimation>
-          </div>
-        </div>
-        <div className="right">
-          <div className="main-div">
-            <ScrollAnimation
-              animateIn="bounceInRight"
-              delay={delayTime.five}
-              duration={0.5}
-            >
-              <h3>
-                Not born in Louisiana. <br /> Neither Kentucky. Nor Texas.{" "}
-              </h3>
-            </ScrollAnimation>
-            <div className="img-div">
-              {/* <Img fluid={data.chickenTender.childImageSharp.fluid} /> */}
-              <img src={chikenTender} alt="tender" />
-            </div>
-            <ScrollAnimation
-              animateIn="bounceInRight"
-              delay={delayTime.six}
-              duration={0.5}
-            >
-            {/* <div> */}
-            <h3>
-              {" "}
-              NO MAJOR OF COLONELS. <br /> WITH HONEST ingredients{" "}
-            </h3>
-            {/* </div> */}
-            </ScrollAnimation>
-          </div>
-          <ScrollAnimation
-            animateIn="bounceInRight"
-            delay={delayTime.seven}
-            duration={0.5}
-            className="hot-spicy"
-          >
-            <span>hot & spicy</span>
-          </ScrollAnimation>
-        </div>
-      </div>
+          )}
+        </Scene>
+      </Controller>
     </section>
   )
 }
