@@ -2,7 +2,8 @@ import React from "react"
 import logo from "../images/logo_big.png"
 import OrderNow from "./ordernow"
 import { Link } from "gatsby"
-import Sticky from "react-sticky-el"
+ import Sticky from "react-sticky-el"
+//import { StickyContainer, Sticky } from 'react-sticky';
 
 const Header = props => {
   let menuActive = props.menuState ? "is-inactive" : ""
