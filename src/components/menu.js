@@ -111,7 +111,15 @@ const Menu = () => {
         <div className="main-menu">
           <div className="top menu-item">
             <div className="left">
-              <h1>FRIED CHICKEN</h1>
+             
+              <h1 >
+                FRIED CHICKEN</h1>
+             
+              <div className="fitConatainer">
+              <h1 >
+                FRIED CHICKEN</h1>
+              </div>
+             
               <h4>Jackson’s Wings</h4>
               <h4>Jackson’s Tenders</h4>
               <h4></h4>
@@ -136,6 +144,10 @@ const Menu = () => {
           <div className="middle menu-item">
             <div className="left">
               <h1>BURGERS</h1>
+              <div className="fitConatainer">
+              <h1 >
+              BURGERS</h1>
+              </div>
 
               <h4>Jackson’s Crunchy Burger</h4>
 
@@ -165,7 +177,10 @@ const Menu = () => {
           <div className="bottom menu-item">
             <div className="left">
               <h1>SIDES</h1>
-
+              <div className="fitConatainer">
+              <h1 >
+              SIDES</h1>
+              </div>
               <h4>Criss Cross Fries</h4>
               <h4>Steakhouse Fries</h4>
               <h4>Onion Rings</h4>

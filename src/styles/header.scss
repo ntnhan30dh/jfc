@@ -6,7 +6,7 @@
 
 .nav {
   width: 100%;
-  max-height: 150px;
+  max-height: 80px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -66,7 +66,7 @@
       }
     }
     .img_div {
-      width: 120px;
+      width: 80px;
       @media screen and (max-width: 1000px) {
         width: 100px;
 
@@ -170,8 +170,9 @@
       font-family: 'Bebas Neue', cursive;
       background-color: #ffffff;
       margin: 0;
-      padding: 5px 20px;
+      padding: 7px 20px 5px 20px;
       border-radius: 0;
+      display: flex;
       &:hover {
         background-color: transparent;
         background-image: none;

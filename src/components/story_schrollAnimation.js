@@ -101,7 +101,7 @@ const Story = props => {
               delay={delayTime.two}
               duration={0.5}
             >
-              <h1>fried.</h1>
+              <h1 style={{fontStyle: "italic"}}>fried.</h1>
             </ScrollAnimation>
           </div>
         </div>
