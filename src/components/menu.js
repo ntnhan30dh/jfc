@@ -99,30 +99,24 @@ const Menu = () => {
         </div>
       </div>
       <div className="main-div">
-       
-          {" "}
-          <div className="left">
-            <span className="menu-sidebar">
-              MENU MENU MENU MENU MENU MENU MENU
-            </span>
-          </div>
-      
-
+        {" "}
+        <div className="left">
+          <span className="menu-sidebar">
+            MENU MENU MENU MENU MENU MENU MENU
+          </span>
+        </div>
         <div className="main-menu">
           <div className="top menu-item">
             <div className="left">
-             
-              <h1 >
-                FRIED CHICKEN</h1>
-             
-              <div className="fitConatainer">
-              <h1 >
-                FRIED CHICKEN</h1>
+              <div className="text-container">
+              <h1>FRIED CHICKEN</h1>
+              <div className="border">
+                <h1>FRIED CHICKEN</h1>
               </div>
-             
-              <h4>Jackson’s Wings</h4>
               <h4>Jackson’s Tenders</h4>
-              <h4></h4>
+              <h4>Jackson’s Wings</h4>
+              </div>
+          
             </div>
             <div className="right">
               <div className="carousel">
@@ -137,25 +131,22 @@ const Menu = () => {
                     <Img fluid={data.sides1.childImageSharp.fluid} />
                   </div>
                 </Slider>
-              </div>
               <span> juicy</span>
+              </div>
             </div>
           </div>
           <div className="middle menu-item">
             <div className="left">
+              <div className="text-container">
               <h1>BURGERS</h1>
-              <div className="fitConatainer">
-              <h1 >
-              BURGERS</h1>
-              </div>
-
+              <div className="border">
+                <h1>BURGERS</h1>
+             </div>
               <h4>Jackson’s Crunchy Burger</h4>
-
               <h4>Jackson’s Cheezy Burger</h4>
-
-              <h4>Hot’n'Cheezy Burger</h4>
-
               <h4>Double Crunchy Burger</h4>
+              <h4>Hot’n'Cheezy Burger</h4>
+              </div>
             </div>
             <div className="right">
               <div className="carousel">
@@ -170,21 +161,22 @@ const Menu = () => {
                     <Img fluid={data.burger3.childImageSharp.fluid} />
                   </div>
                 </Slider>
-              </div>
               <span> tender</span>
+              </div>
             </div>
           </div>
           <div className="bottom menu-item">
             <div className="left">
+              <div className="text-container">
               <h1>SIDES</h1>
-              <div className="fitConatainer">
-              <h1 >
-              SIDES</h1>
+              <div className="border">
+                <h1>SIDES</h1>
               </div>
-              <h4>Criss Cross Fries</h4>
-              <h4>Steakhouse Fries</h4>
-              <h4>Onion Rings</h4>
               <h4>Mixed Green Salad</h4>
+              <h4>Steakhouse Fries</h4>
+              <h4>Criss Cross Fries</h4>
+              <h4>Onion Rings</h4>
+              </div>
             </div>
             <div className="right">
               <div className="carousel">
@@ -199,8 +191,8 @@ const Menu = () => {
                     <Img fluid={data.sides1.childImageSharp.fluid} />
                   </div>
                 </Slider>
-              </div>
               <span className="crunchy-text"> crunchy</span>
+              </div>
             </div>
           </div>
         </div>

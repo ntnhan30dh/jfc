@@ -76,6 +76,7 @@ const Story = props => {
                 animateIn="bounceInRight"
                 delay={delayTime.three}
                 duration={0.5}
+                initiallyVisible={true}
               >
                 <h4>NO SECRET HERBS OR SPICES</h4>
               </ScrollAnimation>
@@ -91,6 +92,7 @@ const Story = props => {
                 animateIn="bounceInRight"
                 delay={delayTime.four}
                 duration={0.5}
+                initiallyVisible={true}
               >
                 <h4>No confidential buttermilk recipes.</h4>
               </ScrollAnimation>
@@ -111,6 +113,7 @@ const Story = props => {
               animateIn="bounceInRight"
               delay={delayTime.five}
               duration={0.5}
+              initiallyVisible={true}
             >
               <h3>
                 Not born in Louisiana. <br /> Neither Kentucky. Nor Texas.{" "}
@@ -128,7 +131,7 @@ const Story = props => {
             {/* <div> */}
             <h3>
               {" "}
-              NO MAJOR OF COLONELS. <br /> WITH HONEST ingredients{" "}
+              NO MAJOR OR COLONELS. <br /> WITH HONEST ingredients{" "}
             </h3>
             {/* </div> */}
             </ScrollAnimation>
@@ -138,6 +141,7 @@ const Story = props => {
             delay={delayTime.seven}
             duration={0.5}
             className="hot-spicy"
+
           >
             <span>hot & spicy</span>
           </ScrollAnimation>

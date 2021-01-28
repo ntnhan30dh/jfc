@@ -2,18 +2,21 @@
   width: 100%;
   font-size: 0;
   .redDiv {
-    padding: 5% 0;
+    margin-top: 150px;
+    padding: 2% 5%;
     width: 100%;
     background-color: $primary-colour;
     .top {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
       width: 100%;
       @media screen and (max-width: 1000px) {
         flex-direction: column;
         align-items: center;
       }
       .left {
-        width: 40%;
+        width: fit-content;
         @media screen and (max-width: 1000px) {
           margin: 10px auto;
          //border: 1px white solid;
@@ -58,7 +61,10 @@
     }
     .bottom {
       text-align: center;
-      padding-top: 3%;
+      @media screen and (max-width: 1000px) {
+    margin-top: 20px;
+      }
+     
       h4 {
         font-size: 25px;
         font-weight: bold;

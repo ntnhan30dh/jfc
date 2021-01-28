@@ -44,7 +44,7 @@
       .bar3 {
         width: 35px;
         height: 5px;
-        background-color: #333;
+        background-color: #ffffff;
         margin: 6px 0;
         transition: 0.4s;
       }
@@ -92,7 +92,7 @@
     width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     @media screen and (max-width: $break-large) {
       width: 100%;
@@ -144,13 +144,13 @@
             font-size: 17px;
             letter-spacing: 0.4px;
           }
-          @media screen and (max-width: 500px) {
-            font-size: 15px;
-          }
+          // @media screen and (max-width: 500px) {
+          //   font-size: 15px;
+          // }
 
-          @media screen and (max-width: 400px) {
-            font-size: 12px;
-          }
+          // @media screen and (max-width: 400px) {
+          //   font-size: 12px;
+          // }
           //   @media screen and (max-width: 400px) {
           //     font-size: 9px;
           // }
@@ -181,19 +181,17 @@
         color: #ffff;
       }
 
-      @media screen and (max-width: $break-large) {
-        width: 138px;
-        height: 42px;
-        font-size: 15px;
-        letter-spacing: 0.4px;
-      }
-      @media screen and (max-width: $phone) {
-        margin: 3% 0;
-      }
-      @media screen and (max-width: 500px) {
-        width: 90px;
-        height: 32px;
-        font-size: 10px;
+      // @media screen and (max-width: $break-large) {
+      //   width: 138px;
+      //   height: 42px;
+      //   font-size: 15px;
+      //   letter-spacing: 0.4px;
+      // }
+      // @media screen and (max-width: $phone) {
+      //   margin: 3% 0;
+      // }
+      @media screen and (max-width: 900px) {
+        font-size: 19px;
       }
 
       // @media screen and (max-width: 500px) {

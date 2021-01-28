@@ -20,7 +20,6 @@ const FollowUs = () => {
             choice, make it Jackson's.
             </h2>
           </div>
-        </div>
         <div className="bottom">
           <h4>follow us</h4>
           <div className="icons">
@@ -31,6 +30,7 @@ const FollowUs = () => {
               <img src={facebook} alt="logo" />
             </div>
           </div>
+        </div>
         </div>
       </div>
       <div className="blackDiv">
