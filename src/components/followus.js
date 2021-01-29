@@ -9,16 +9,16 @@ const FollowUs = () => {
     <section className="followUsContainer" id="follow">
       <div className="redDiv">
         <div className="top">
+          <div className="right">
+            <h2>
+            Feeling tender?<br/> Or longing for burgers? <br/>  Whatever your chicken <br/>
+            choice, make it Jackson's.
+            </h2>
+          </div>
           <div className="left">
             <div className="img_div">
               <img src={logo} alt="logo" />
             </div>
-          </div>
-          <div className="right">
-            <h2>
-            Feeling tender? Or longing for <br/> burgers? Whatever your chicken <br/>
-            choice, make it Jackson's.
-            </h2>
           </div>
         <div className="bottom">
           <h4>follow us</h4>

@@ -247,7 +247,7 @@
 
         span {
           position: absolute;
-          font-size: 5vw;
+          font-size: 6vw;
           color: white;
           -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
           -webkit-text-stroke-width: 1px;
@@ -298,7 +298,7 @@
         }
         span{
           top: 10px;
-          left: 70%;
+          left: 60%;
           @media screen and (max-width: 1000px) {
             top: -15%;
             left: 0;

@@ -78,23 +78,33 @@ const Story = props => {
                 duration={0.5}
                 initiallyVisible={true}
               >
-                <h4>NO SECRET HERBS OR SPICES</h4>
-              </ScrollAnimation>
-           
-               
-              <div className="main-text">
+                <h4>NO SECRET HERBS OR SPICES.
+                  <br/>
+                  No confidential buttermilk recipes.
+                </h4>
+              </ScrollAnimation>    
+              {/* <div className="main-text"> */}
+              <ScrollAnimation
+              animateIn="bounceInRight"
+              delay={delayTime.four}
+              duration={0.5}
+             // initiallyVisible={true}
+              className="main-text"
+            >
                 <span>
                   JUST
                   Jackson’s
                 </span>
-              </div>
+              </ScrollAnimation>
+
+              {/* </div> */}
               <ScrollAnimation
                 animateIn="bounceInRight"
-                delay={delayTime.four}
+                delay={delayTime.five}
                 duration={0.5}
-                initiallyVisible={true}
+             
               >
-                <h4>No confidential buttermilk recipes.</h4>
+                <h4>WITH HONEST ingredients</h4>
               </ScrollAnimation>
             </div>
 
@@ -127,18 +137,19 @@ const Story = props => {
               animateIn="bounceInRight"
               delay={delayTime.six}
               duration={0.5}
+              initiallyVisible={true}
             >
             {/* <div> */}
             <h3>
               {" "}
-              NO MAJOR OR COLONELS. <br /> WITH HONEST ingredients{" "}
+              NO MAJOR OR COLONELS.
             </h3>
             {/* </div> */}
             </ScrollAnimation>
           </div>
           <ScrollAnimation
             animateIn="bounceInRight"
-            delay={delayTime.seven}
+            delay={delayTime.three}
             duration={0.5}
             className="hot-spicy"
 
