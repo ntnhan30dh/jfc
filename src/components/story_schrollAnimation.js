@@ -4,11 +4,11 @@ import { graphql, useStaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
 import chikenTender from "../images/chicken-tender_gif.gif"
+import useSound from 'use-sound';
+import fanfareSfx from '../sounds/eating-sound.m4a';
 
 // import Plx from "react-plx"
 import ScrollAnimation from "react-animate-on-scroll"
-
-
 
 const delayTime = {
   one: 250,
@@ -22,6 +22,7 @@ const delayTime = {
 }
 
 const Story = props => {
+  const [play, { stop }] = useSound(fanfareSfx);
   const data = useStaticQuery(graphql`
     {
       bgBig: file(relativePath: { eq: "bg.png" }) {
@@ -44,6 +45,7 @@ const Story = props => {
   const imageData = data.bgBig.childImageSharp.fluid
   return (
     <section className={`storyContainer ${nudge}`}>
+   
       <BackgroundImage
         Tag="section"
         fluid={imageData}
@@ -57,13 +59,12 @@ const Story = props => {
       </BackgroundImage>
 
    
-          <div className="storyDiv"id="story" >
-       
+       <div className="storyDiv"id="story"id='scrolly-div'onMouseEnter={play} onMouseLeave={stop} >
         <div className="left">
-          <div className="story-text">
+          <div className="story-text" >
             <span>our story</span>
           </div>
-          <div className="red" id='scrolly-div'>
+          <div className="red"  >
             <ScrollAnimation
               animateIn="bounceInRight"
               delay={delayTime.one}
@@ -110,7 +111,7 @@ const Story = props => {
 
             <ScrollAnimation
               animateIn="bounceInRight"
-              delay={delayTime.two}
+              delay={delayTime.six}
               duration={0.5}
             >
               <h1 style={{fontStyle: "italic"}}>fried.</h1>
