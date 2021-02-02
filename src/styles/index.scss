@@ -100,3 +100,16 @@ body {
 //   font-size: 0.8em;
 //   padding: 1em;
 // }
+.legalInfo-div{
+  width: 60%;
+  margin: 5% auto;
+  padding-bottom: 5%;
+  @media screen and (max-width: 700px) {
+    width: 80%;
+  }
+  
+    li {
+      font-family: "Roboto", sans-serif;
+    }
+  
+}

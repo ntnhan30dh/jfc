@@ -3,6 +3,7 @@ import React from "react"
 import logo from "../images/logo_big.png"
 import ig from "../images/ig.png"
 import facebook from "../images/facebook.png"
+import { Link } from "gatsby"
 
 const FollowUs = () => {
   return (
@@ -35,9 +36,15 @@ const FollowUs = () => {
       </div>
       <div className="blackDiv">
         <ul>
-          <li>Impressum</li>
-          <li>Privacy Policy</li>
-          <li>Terms & conditions</li>
+          <li>
+            <Link to="/imprint">Imprint</Link>
+            </li>
+            <li>
+            <Link to="/privacy">Privacy Policy </Link>
+            </li>
+            <li>
+            <Link to="/disclaimer">Disclaimer</Link>
+            </li>
         </ul>
       </div>
     </section>

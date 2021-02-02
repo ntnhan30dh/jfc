@@ -12,7 +12,7 @@ const Header = props => {
     <Sticky  className="sticky">
     <nav className="nav">
       <div className="leftDiv">
-        <Link to="#" >
+        <Link to="/" >
         <div className="img_div">
 
           <img src={logo} alt="logo" />
@@ -27,13 +27,13 @@ const Header = props => {
       <div className={`rightDiv row ${menuActive}`}>
         <ul>
           <li>
-            <Link to="#story">Our Story</Link>
+            <Link to="/#story">Our Story</Link>
           </li>
           <li>
-            <Link to="#menu">Menu</Link>
+            <Link to="/#menu">Menu</Link>
           </li>
           <li>
-            <Link to="#follow">Follow Us</Link>
+            <Link to="/#follow">Follow Us</Link>
           </li>
         </ul>
         <OrderNow />
