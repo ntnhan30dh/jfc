@@ -91,10 +91,10 @@ const Story = props => {
              // initiallyVisible={true}
               className="main-text"
             >
-                <span>
+                <h3>
                   JUST
                   Jackson’s
-                </span>
+                </h3>
               </ScrollAnimation>
 
               {/* </div> */}

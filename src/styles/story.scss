@@ -150,12 +150,13 @@
           .main-text {
             width: 60%;
             // height: 147px;
-            padding: 10%;
+            padding: 10% 5%;
             margin: 5% auto;
             border-left: solid white 1px;
             border-right: solid white 1px;
 
-            span {
+            h3 {
+              font-family: "Bebas Neue", cursive;
               font-size: 100px;
               font-weight: bold;
               font-stretch: normal;
@@ -168,6 +169,8 @@
               background-clip: text;
               -webkit-text-fill-color: transparent;
               background-color: white;
+              margin-block-start: unset;
+              margin-block-end: unset;
               @media screen and (max-width: 1500px) {
                 font-size: 70px;
               }
