@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Header from "../components/header"
-import FollowUs from "../components/followus"
+import Footer from "../components/footer"
 import CookieConsent from "react-cookie-consent"
 
 import "semantic-ui-css/semantic.min.css"
@@ -59,7 +59,7 @@ export default function Home() {
           Östberg
         </p>
       </div>
-      <FollowUs/>
+      <Footer/>
       <CookieConsent
         location="bottom"
         buttonText="I AGREE"
