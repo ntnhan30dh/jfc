@@ -25,6 +25,14 @@ const Menu = () => {
         }
       }
 
+      friedChicken3: file(relativePath: { eq: "friedChicken3.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
       tender1: file(relativePath: { eq: "tender-1.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
@@ -58,6 +66,14 @@ const Menu = () => {
       }
 
       sides1: file(relativePath: { eq: "sides1.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      sides3: file(relativePath: { eq: "sides3.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -128,7 +144,7 @@ const Menu = () => {
                     <Img fluid={data.friedChicken2.childImageSharp.fluid} />
                   </div>
                   <div>
-                    <Img fluid={data.sides1.childImageSharp.fluid} />
+                    <Img fluid={data.friedChicken3.childImageSharp.fluid} />
                   </div>
                 </Slider>
               <span> juicy</span>
@@ -188,7 +204,7 @@ const Menu = () => {
                     <Img fluid={data.tender1.childImageSharp.fluid} />
                   </div>
                   <div>
-                    <Img fluid={data.sides1.childImageSharp.fluid} />
+                    <Img fluid={data.sides3.childImageSharp.fluid} />
                   </div>
                 </Slider>
               <span className="crunchy-text"> crunchy</span>
