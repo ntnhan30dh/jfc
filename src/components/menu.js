@@ -2,9 +2,10 @@ import React from "react"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 import Slider from "react-slick"
-//import { Controller, Scene } from "react-scrollmagic"
-//import { StickyContainer, Sticky } from "react-sticky"
-//import Sticky from "react-sticky-el"
+
+import good from "../images/badge_good.png"
+import goodness from "../images/badge_goodness.png"
+import tender from "../images/badge_tender.png"
 
 const Menu = () => {
   const data = useStaticQuery(graphql`
@@ -65,6 +66,14 @@ const Menu = () => {
         }
       }
 
+      burger4: file(relativePath: { eq: "burger4.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
       sides1: file(relativePath: { eq: "sides1.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
@@ -73,7 +82,23 @@ const Menu = () => {
         }
       }
 
+      sides2: file(relativePath: { eq: "sides2.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
       sides3: file(relativePath: { eq: "sides3.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      sides4: file(relativePath: { eq: "sides4.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp
@@ -123,23 +148,25 @@ const Menu = () => {
         </div>
         <div className="main-menu">
           <div className="top menu-item">
+            <div className="badgeDiv">
+              <img src={tender} alt="logo" />
+            </div>
             <div className="left">
               <div className="text-container">
-              <h1>FRIED CHICKEN</h1>
-              <div className="border">
                 <h1>FRIED CHICKEN</h1>
+                <div className="border">
+                  <h1>FRIED CHICKEN</h1>
+                </div>
+                <h4>Jackson’s Tenders</h4>
+                <h4>Jackson’s Wings</h4>
               </div>
-              <h4>Jackson’s Tenders</h4>
-              <h4>Jackson’s Wings</h4>
-              </div>
-          
             </div>
             <div className="right">
               <div className="carousel">
                 <Slider {...settings}>
-                  <div>
+                  {/* <div>
                     <Img fluid={data.friedChicken1.childImageSharp.fluid} />
-                  </div>
+                  </div> */}
                   <div>
                     <Img fluid={data.friedChicken2.childImageSharp.fluid} />
                   </div>
@@ -147,21 +174,24 @@ const Menu = () => {
                     <Img fluid={data.friedChicken3.childImageSharp.fluid} />
                   </div>
                 </Slider>
-              <span> juicy</span>
+                <span> juicy</span>
               </div>
             </div>
           </div>
           <div className="middle menu-item">
+          <div className="badgeDiv_middle">
+              <img src={goodness} alt="logo" />
+            </div>
             <div className="left">
               <div className="text-container">
-              <h1>BURGERS</h1>
-              <div className="border">
                 <h1>BURGERS</h1>
-             </div>
-              <h4>Jackson’s Crunchy Burger</h4>
-              <h4>Jackson’s Cheezy Burger</h4>
-              <h4>Double Crunchy Burger</h4>
-              <h4>Hot’n'Cheezy Burger</h4>
+                <div className="border">
+                  <h1>BURGERS</h1>
+                </div>
+                <h4>Jackson’s Crunchy Burger</h4>
+                <h4>Jackson’s Cheezy Burger</h4>
+                <h4>Double Crunchy Burger</h4>
+                <h4>Hot’n'Cheezy Burger</h4>
               </div>
             </div>
             <div className="right">
@@ -176,38 +206,47 @@ const Menu = () => {
                   <div>
                     <Img fluid={data.burger3.childImageSharp.fluid} />
                   </div>
+                  <div>
+                    <Img fluid={data.burger4.childImageSharp.fluid} />
+                  </div>
                 </Slider>
-              <span> tender</span>
+                <span> tender</span>
               </div>
             </div>
           </div>
           <div className="bottom menu-item">
+            <div className="badgeDiv">
+              <img src={good} alt="logo" />
+            </div>
             <div className="left">
               <div className="text-container">
-              <h1>SIDES</h1>
-              <div className="border">
                 <h1>SIDES</h1>
-              </div>
-              <h4>Mixed Green Salad</h4>
-              <h4>Steakhouse Fries</h4>
-              <h4>Criss Cross Fries</h4>
-              <h4>Onion Rings</h4>
+                <div className="border">
+                  <h1>SIDES</h1>
+                </div>
+                <h4>Mixed Green Salad</h4>
+                <h4>Steakhouse Fries</h4>
+                <h4>Criss Cross Fries</h4>
+                <h4>Onion Rings</h4>
               </div>
             </div>
             <div className="right">
               <div className="carousel">
                 <Slider {...settings}>
                   <div>
-                    <Img fluid={data.friedChicken1.childImageSharp.fluid} />
+                    <Img fluid={data.sides1.childImageSharp.fluid} />
                   </div>
                   <div>
-                    <Img fluid={data.tender1.childImageSharp.fluid} />
+                    <Img fluid={data.sides2.childImageSharp.fluid} />
                   </div>
                   <div>
                     <Img fluid={data.sides3.childImageSharp.fluid} />
                   </div>
+                  <div>
+                    <Img fluid={data.sides4.childImageSharp.fluid} />
+                  </div>
                 </Slider>
-              <span className="crunchy-text"> crunchy</span>
+                <span className="crunchy-text"> crunchy</span>
               </div>
             </div>
           </div>
