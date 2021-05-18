@@ -143,7 +143,7 @@ const Menu = () => {
         {" "}
         <div className="left">
           <span className="menu-sidebar">
-            MENU 
+            MENU MENU MENU MENU MENU MENU
           </span>
         </div>
         <div className="main-menu">
@@ -254,7 +254,8 @@ const Menu = () => {
         {/* <Sticky> */}
         <div className="right">
           <span className="menu-sidebar">
-            MENU 
+          MENU MENU MENU MENU MENU MENU
+ 
           </span>
         </div>
         {/* </Sticky> */}
