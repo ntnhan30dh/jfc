@@ -130,4 +130,23 @@
       }
     }
   }
+
+  .soMe{
+      display: flex;
+      width: 100%;
+      padding: 5% 10%;
+      @media screen and (max-width: $phone) {
+        padding: 0 ;
+      }
+      justify-content: space-between;
+      & > div {
+         width: 30%;
+         border: #ffffff 5px solid;
+        img{
+          width: 100%;
+        }
+        
+      }
+    
+  }
 }
