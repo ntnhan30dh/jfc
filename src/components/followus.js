@@ -38,6 +38,19 @@ const FollowUs = () => {
   return (
     <section className="followUsContainer" id="follow">
       <div className="redDiv">
+      <div className="followUsText">
+          <h4>follow us</h4>
+          <div className="icons">
+            <div className="img_div">
+            <Link to="https://www.instagram.com/jacksons_fried_chicken/" target="_blank">
+              <img src={ig} alt="logo" />
+            </Link>
+            </div>
+            <div className="img_div">
+              <img src={facebook} alt="logo" />
+            </div>
+          </div>
+        </div>
       <div className="soMe">
         <div className="pic">
           <Link to="https://www.instagram.com/jacksons_fried_chicken/" className="" target="_blank">
@@ -68,7 +81,7 @@ const FollowUs = () => {
             </div>
           </div>
         <div className="bottom">
-          <h4>follow us</h4>
+          {/* <h4>follow us</h4>
           <div className="icons">
             <div className="img_div">
             <Link to="https://www.instagram.com/jacksons_fried_chicken/" target="_blank">
@@ -78,11 +91,23 @@ const FollowUs = () => {
             <div className="img_div">
               <img src={facebook} alt="logo" />
             </div>
-          </div>
+          </div> */}
+
+          <ul>
+          <li>
+            <Link to="/imprint">Imprint</Link>
+            </li>
+            <li>
+            <Link to="/privacy">Privacy Policy </Link>
+            </li>
+            <li>
+            <Link to="/disclaimer">Disclaimer</Link>
+            </li>
+        </ul>
         </div>
         </div>
       </div>
-      <div className="blackDiv">
+      {/* <div className="blackDiv">
         <ul>
           <li>
             <Link to="/imprint">Imprint</Link>
@@ -94,7 +119,7 @@ const FollowUs = () => {
             <Link to="/disclaimer">Disclaimer</Link>
             </li>
         </ul>
-      </div>
+      </div> */}
     </section>
   )
 }
