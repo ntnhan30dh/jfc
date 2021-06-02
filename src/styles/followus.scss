@@ -1,11 +1,122 @@
 .followUsContainer {
   width: 100%;
   font-size: 0;
+  margin-top: 100px;
+  h2 {
+    margin: 30px auto;
+    width: fit-content;
+    text-align: right;
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: $primary-colour;
+    font-family: "Bebas Neue", cursive;
+
+    @media screen and (max-width: 1000px) {
+      text-align: center;
+      font-size: 30px;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 20px;
+    }
+  }
+
+  .soMe-container {
+    display: flex;
+    justify-content: space-between;
+   // margin-top: 60px;
+    .left,
+    .right {
+      font-size: 29px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.01px;
+      text-align: center;
+      color: #000000;
+      font-family: "Roboto", sans-serif;
+      min-height: 100%;
+      border: 3px solid $primary-colour;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //border: 1px solid red;
+      @media screen and (max-width: 1000px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 15px;
+      }
+      .menu-sidebar {
+        width: 70px;
+        word-spacing: 10px;
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+        white-space: nowrap;
+
+        @media screen and (max-width: 1000px) {
+          width: 50px;
+        }
+
+        @media screen and (max-width: 500px) {
+          width: 30px;
+        }
+      }
+    }
+
+    .left {
+      .menu-sidebar {
+        writing-mode: vertical-lr;
+        text-orientation: sideways-right;
+        transform: rotate(180deg);
+        position: -webkit-sticky;
+        //  position: sticky;
+        //top: 150px;
+        // bottom: 500px;
+      }
+      // border: 3px solid $primary-colour;
+    }
+
+    .right {
+      .menu-sidebar {
+        writing-mode: vertical-lr;
+        text-orientation: sideways-right;
+        transform: rotate(180deg);
+        position: -webkit-sticky;
+        //  position: sticky;
+        //  top: 150px;
+      }
+      //  border: 3px solid $primary-colour;
+    }
+    .main-soMe {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      @media screen and (max-width: $phone) {
+        padding: 0;
+      }
+      justify-content: space-between;
+      & > div {
+        width: 33.33333%;
+        border: #ffffff 1px solid;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
   .redDiv {
     margin-top: 150px;
-    padding: 3% 5%;
+   // padding: 3% 0;
     width: 100%;
-  //  background-color: $primary-colour;
+    //  background-color: $primary-colour;
     @media screen and (max-width: 800px) {
       margin-top: 100px;
     }
@@ -14,41 +125,41 @@
       margin-top: 50px;
     }
 
-    .followUsText{
+    .followUsText {
       background-color: $primary-colour;
       padding: 25px 0;
-       // width: fit-content;
+      // width: fit-content;
+      text-align: center;
+      margin: 0 auto;
+      @media screen and (max-width: 1000px) {
+        margin-top: 20px;
+      }
+
+      h4 {
+        font-size: 35px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.01px;
         text-align: center;
-        margin: 0 auto;
-        @media screen and (max-width: 1000px) {
-          margin-top: 20px;
-        }
-  
-        h4 {
-          font-size: 35px;
-          font-weight: bold;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: normal;
-          letter-spacing: 0.01px;
-          text-align: center;
-          color: #ffffff;
-          font-family: "Bebas Neue", cursive;
-        }
-        .icons {
-          display: flex;
-          justify-content: center;
-          .img_div {
-            width: 48px;
-            margin: 0 20px;
-            @media screen and (max-width: 500px) {
-              margin: 0 10px;
-            }
-            img {
-              width: 100%;
-            }
+        color: #ffffff;
+        font-family: "Bebas Neue", cursive;
+      }
+      .icons {
+        display: flex;
+        justify-content: center;
+        .img_div {
+          width: 48px;
+          margin: 0 20px;
+          @media screen and (max-width: 500px) {
+            margin: 0 10px;
+          }
+          img {
+            width: 100%;
           }
         }
+      }
     }
     .top {
       background-color: $primary-colour;
@@ -120,31 +231,29 @@
         margin-top: 20px;
       }
 
-    ul {
-      margin: 0 auto;
-      padding: 2px;
-      max-width: fit-content;
-      li {
-        font-size: 25px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: 0px;
-        text-align: left;
-        color: #ffffff;
-        text-decoration: underline;
-        list-style-type: none;
-        @media screen and (max-width: 1000px) {
-          text-align: center;
-        }
-        a{
+      ul {
+        margin: 0 auto;
+        padding: 2px;
+        max-width: fit-content;
+        li {
+          font-size: 25px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0px;
+          text-align: left;
           color: #ffffff;
+          text-decoration: underline;
+          list-style-type: none;
+          @media screen and (max-width: 1000px) {
+            text-align: center;
+          }
+          a {
+            color: #ffffff;
+          }
         }
       }
-    }
-
-     
     }
   }
 
@@ -163,29 +272,27 @@
         color: #ffffff;
         text-decoration: underline;
         list-style-type: none;
-        a{
+        a {
           color: #ffffff;
         }
       }
     }
   }
 
-  .soMe{
-      display: flex;
-      width: 100%;
-      padding: 5% 10%;
-      @media screen and (max-width: $phone) {
-        padding: 0 ;
+  .soMe {
+    display: flex;
+    width: 100%;
+    padding: 5% 10%;
+    @media screen and (max-width: $phone) {
+      padding: 0;
+    }
+    justify-content: space-between;
+    & > div {
+      width: 30%;
+      border: #ffffff 5px solid;
+      img {
+        width: 100%;
       }
-      justify-content: space-between;
-      & > div {
-         width: 30%;
-         border: #ffffff 5px solid;
-        img{
-          width: 100%;
-        }
-        
-      }
-    
+    }
   }
 }
