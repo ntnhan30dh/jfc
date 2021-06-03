@@ -62,9 +62,16 @@ const FollowUs = () => {
         choice, make it Jackson's.
       </h2>
       <div className="soMe-container">
-        <div className="left">
-          <span className="menu-sidebar">FOLLOW US</span>
-        </div>
+        <Link
+          to="https://www.instagram.com/jacksons_fried_chicken/"
+          className=""
+          target="_blank"
+        >
+          <div className="left">
+            <span className="menu-sidebar">FOLLOW US</span>
+          </div>
+        </Link>
+
         <div className="main-soMe">
           <div className="pic">
             <Link
@@ -148,9 +155,15 @@ const FollowUs = () => {
             </Link>
           </div>
         </div>
-        <div className="right">
-          <span className="menu-sidebar">FOLLOW US</span>
-        </div>
+        <Link
+          to="https://www.instagram.com/jacksons_fried_chicken/"
+          className=""
+          target="_blank"
+        >
+          <div className="right">
+            <span className="menu-sidebar">FOLLOW US</span>
+          </div>
+        </Link>
       </div>
       <div className="redDiv">
         {/* <div className="followUsText">
