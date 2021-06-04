@@ -53,6 +53,28 @@ const FollowUs = () => {
           }
         }
       }
+
+      soMe7: file(relativePath: { eq: "soMe7.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 400) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      soMe8: file(relativePath: { eq: "soMe8.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      soMe9: file(relativePath: { eq: "soMe9.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
     }
   `)
   return (
@@ -79,25 +101,7 @@ const FollowUs = () => {
               className=""
               target="_blank"
             >
-              <Img fluid={data.soMe2.childImageSharp.fluid} />
-            </Link>
-          </div>
-          <div className="pic">
-            <Link
-              to="https://www.instagram.com/jacksons_fried_chicken/"
-              className=""
-              target="_blank"
-            >
               <Img fluid={data.soMe1.childImageSharp.fluid} />
-            </Link>
-          </div>
-          <div className="pic">
-            <Link
-              to="https://www.instagram.com/jacksons_fried_chicken/"
-              className=""
-              target="_blank"
-            >
-              <Img fluid={data.soMe3.childImageSharp.fluid} />
             </Link>
           </div>
           <div className="pic">
@@ -115,15 +119,6 @@ const FollowUs = () => {
               className=""
               target="_blank"
             >
-              <Img fluid={data.soMe1.childImageSharp.fluid} />
-            </Link>
-          </div>
-          <div className="pic">
-            <Link
-              to="https://www.instagram.com/jacksons_fried_chicken/"
-              className=""
-              target="_blank"
-            >
               <Img fluid={data.soMe3.childImageSharp.fluid} />
             </Link>
           </div>
@@ -133,7 +128,7 @@ const FollowUs = () => {
               className=""
               target="_blank"
             >
-              <Img fluid={data.soMe2.childImageSharp.fluid} />
+              <Img fluid={data.soMe4.childImageSharp.fluid} />
             </Link>
           </div>
           <div className="pic">
@@ -142,7 +137,7 @@ const FollowUs = () => {
               className=""
               target="_blank"
             >
-              <Img fluid={data.soMe1.childImageSharp.fluid} />
+              <Img fluid={data.soMe5.childImageSharp.fluid} />
             </Link>
           </div>
           <div className="pic">
@@ -151,7 +146,34 @@ const FollowUs = () => {
               className=""
               target="_blank"
             >
-              <Img fluid={data.soMe3.childImageSharp.fluid} />
+              <Img fluid={data.soMe6.childImageSharp.fluid} />
+            </Link>
+          </div>
+          <div className="pic">
+            <Link
+              to="https://www.instagram.com/jacksons_fried_chicken/"
+              className=""
+              target="_blank"
+            >
+              <Img fluid={data.soMe7.childImageSharp.fluid} />
+            </Link>
+          </div>
+          <div className="pic">
+            <Link
+              to="https://www.instagram.com/jacksons_fried_chicken/"
+              className=""
+              target="_blank"
+            >
+              <Img fluid={data.soMe8.childImageSharp.fluid} />
+            </Link>
+          </div>
+          <div className="pic">
+            <Link
+              to="https://www.instagram.com/jacksons_fried_chicken/"
+              className=""
+              target="_blank"
+            >
+              <Img fluid={data.soMe9.childImageSharp.fluid} />
             </Link>
           </div>
         </div>
